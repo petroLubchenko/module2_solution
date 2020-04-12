@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 300px;
+}
+
+header {
+    font-size: 4em;
+    text-align: center;
+}
+
+.title {
+    float: right;
+    font-size: 3em;
+    overflow: hidden;
+}
+
+.title-green {
+    background-color: rgba(10,140,30,0.7);
+}
+
+.title-yellow {
+    background-color: rgba(245,229,27,0.7);
+}
+
+.title-papaya {
+    background-color: #fcbc84;
+}
+
+.content {
+    float: left;
+    clear: left;
+}
+
+@media (max-width:767px) {
+    .col-sm-12 {
+        border: 1px rgba(0,0,0,0.5) solid;
+        background-color: papayawhip;
+        position: relative;
+        float: left;
+        width: 99%;
+        margin: 1% 0px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-6,
+    .col-md-12 {
+        border: 1px black solid;
+        background-color: papayawhip;
+        position: relative;
+        float: left;
+    }
+    .col-md-6 {
+        width: 48%;
+        margin: 2% 1%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-4 {
+        border: 1px black solid;
+        background-color: papayawhip;
+        position: relative;
+        float: left;
+        width: 32%;
+        margin: 2% 0.5%;
+    }
+}
